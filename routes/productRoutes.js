@@ -13,7 +13,7 @@ products.get('/', productController.get)
 
 products.use(authentication)
 products.post('/', authorize, productController.create)
-products.get('/:id', authorize,productController.getById)
+products.get('/:id', authorize, productController.getById)
 products.put('/:id', authorize, productController.update)
 products.delete('/:id', authorize, productController.delete)
 

@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "jest --runInBand --forceExit --verbose --detectOpenHandles",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build:client": "cd client && npm run build"
   },
   "repository": {
     "type": "git",

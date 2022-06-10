@@ -5,6 +5,7 @@ async function authorize(req, res, next) {
     const user = await User.findOne({
       where: { id: req.loggedin.id, role: "admin" },
     });
+    console.log(user, 'ini user')
     if (user) {
       next();
     } else {
