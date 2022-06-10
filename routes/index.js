@@ -4,9 +4,9 @@ const productRoutes = require("./productRoutes");
 const userController = require("../controllers/userController");
 
 // homepage, fetch data bagian produk
-router.get("/", (req, res) => {
-  res.json("hi from router");
-});
+// router.get("/", (req, res) => {
+//   res.json("hi from router");
+// });
 
 // admin
 router.use("/admin", adminRoutes);
